@@ -1,0 +1,58 @@
+.topbar {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+
+    .left {
+      .logo {
+        letter-spacing: 2px;
+        font-size: 25px;
+        font-weight: bolder;
+        color: #2c394b;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+      }
+
+      .topiconcontainer {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+
+        .notificationbadge {
+          background-color: red;
+          border-radius: 50%;
+          position: absolute;
+          top: -10px;
+          left: 12px;
+          border-radius: 50%;
+          width: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1px;
+        }
+      }
+    }
+  }
+}
